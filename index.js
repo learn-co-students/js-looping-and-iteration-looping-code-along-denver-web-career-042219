@@ -1,10 +1,17 @@
 // Code your solutions in this file
-function writeCards() {
-  let peeps = [ 'Lisa', 'Kaitlyn', 'Jan']
-  let s = "surprise"
-  for (let i = 0; i < peeps.length; i++) {
-    return `Thank you, ${peeps[i]}, for the wonderful ${s} gift!`;
+const writeCards = (arr, word) => {
+  let thankYouCards = []
+  for( let i = 0; i < arr.length; i++){
+  thankYouCards.push( `Thank you, ${arr[i]}, for the wonderful ${word} gift!` )
   }
+  return thankYouCards
+}
 
-  return peeps;
+
+function countdown( countdown ) {
+  while ( countdown > 0 ) {
+    console.log( countdown );
+    countdown -= 1;
+  }
+  console.log( countdown );
 }
